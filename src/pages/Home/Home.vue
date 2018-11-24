@@ -20,6 +20,10 @@
         <div class="group-title textOverFlow2Lines fontMiddle">
           {{recommand.title}}
         </div>
+        <img class="group-img" v-bind:src="recommand.imgSrc" alt="">
+        <div class="group-btn fontMiddle" v-bind:style="{background:recommand.btn_color,color:recommand.word_color,bottom:recommand.btn_bottom}">
+          {{recommand.btn_word}}
+        </div>
       </div>
     </div>
   </div>
@@ -27,6 +31,7 @@
 
 <script>
 import Loading from '@/components/Loading'
+import pic from '@/assets/imgs/pic.png'
 
 export default {
   name: 'Home',
@@ -36,10 +41,14 @@ export default {
   data() {
     return{
       title:'Yeezy 500 中签码已公布',
-      isShow:true,
+      isShow:false,
       recommand:{
-        title:'新一代iPad Pro顶配版全套 正在登记中'
-
+        title:'新一代iPad Pro顶配版全套 正在登记中',
+        imgSrc:pic,
+        btn_word:'立即登记',
+        btn_color:'#000',
+        word_color:'#fff',
+        btn_bottom:'2rem'
       }
     }
   },

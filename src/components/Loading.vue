@@ -36,7 +36,7 @@
 <template>
   <div class="loading" v-show="isShow">
     <div class="icon-load">
-      <img class="icon-img" src="../assets/loading.png" alt="">
+      <img class="icon-img" src="../assets/imgs/loading.png" alt="">
     </div>
   </div>
 </template>
