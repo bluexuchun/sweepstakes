@@ -51,4 +51,256 @@
     }
   }
 
+  &-progress{
+    width:100%;
+    border-bottom:1px solid #eaeaea;
+    .progress-title{
+      font-weight: 600;
+    }
+    .progress-tips{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:#9f9f9f;
+      margin:1.2rem 0rem 1rem 0rem;
+    }
+    .progress-warn{
+      width:100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin:2.5rem 0rem 1.5rem 0rem;
+      .icon-warn{
+        width:1.3rem;
+        height:1.3rem;
+        margin-right:.3rem;
+      }
+      .warn-word{
+        text-decoration: underline;
+        color:#999;
+      }
+    }
+    .progress-group{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding:1rem 0rem;
+      .group-title{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .group-no{
+          width:2rem;
+          height:2rem;
+          border-radius: 50%;
+          background: #000;
+          color:#fff;
+          text-align: center;
+          line-height: 2rem;
+        }
+        .group-box{
+          width:87%;
+          min-height:2rem;
+          background: #F9E03E;
+          border-radius: 10px;
+          box-sizing: border-box;
+          padding:0.8rem 1rem;
+          text-align: left;
+          position: relative;
+          box-shadow: 0px 8px 25px rgba(249,224,62,0.5);
+          .box-title{
+            font-weight: 550;
+          }
+        }
+        .group-box:after{
+          content:'';
+          width:0px;
+          height:0px;
+          position: absolute;
+          left:-.7rem;
+          top:50%;
+          margin-top:-.6rem;
+          border-top: .6rem solid transparent;
+          border-right: .7rem solid #F9E03E;
+          border-bottom: .6rem solid transparent;
+        }
+      }
+      .group-index{
+        width:87%;
+        box-sizing: border-box;
+        padding:2rem 0rem 0rem 0rem;
+        .index-name{
+          width:100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          color:#999;
+          .namefornsdk{
+            display: flex;
+            flex-direction:row;
+            margin-right: 1.5rem;
+            align-items: center;
+            .circle-nsdk{
+              width:.7rem;
+              height:.7rem;
+              border-radius: 50%;
+              margin-right:5px;
+              background: #407BE9;
+            }
+          }
+          .namefordqs{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            .circle-dqs{
+              width:.7rem;
+              height:.7rem;
+              border-radius: 50%;
+              margin-right:5px;
+              background: #000;
+            }
+          }
+        }
+        .index-data{
+          width:100%;
+          padding:2rem 0rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          opacity: 0.4;
+          .data-date{
+            box-sizing: border-box;
+            padding:.5rem .3rem;
+            border-radius: 15px;
+            background: #fafafa;
+            border: 1px solid #999;
+            color:#999;
+          }
+          .data-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .data-nsdk{
+              color:#407BE9;
+            }
+            .data-dqs{
+              color:#000;
+            }
+          }
+        }
+        .index-from{
+          width:100%;
+          text-align: left;
+          .from-title{
+            margin:1rem 0rem 1rem 0rem;
+          }
+          .from-url{
+            width:fit-content;
+            box-sizing: border-box;
+            padding:.4rem .6rem;
+            background: #F5F8FF;
+            color:#7AA3D9;
+            border:1px solid #7AA3D9;
+            border-radius: 15px;
+            margin-bottom:1rem;
+          }
+        }
+        .index-draw{
+          width:100%;
+          .draw-time{
+            width:100%;
+            color:#999;
+            text-align: left;
+            margin-bottom:1rem;
+          }
+          .draw-drawsNum{
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            .drawnumbs{
+              font-size:4rem;
+            }
+            .drawword{
+              font-weight: 600
+            }
+          }
+        }
+        .index-result{
+          width:100%;
+          opacity: 0.7;
+          .result-title{
+            width:100%;
+            padding:.5rem 0rem 1.5rem 0rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid #eaeaea;
+          }
+          .result-user{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin:2rem 0rem;
+            .userinfo{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .userava{
+                width:2rem;
+                height:2rem;
+                border-radius: 10px;
+                margin-right:1rem;
+              }
+            }
+          }
+          .result-column{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            opacity: .5;
+            .result-way{
+              color:#999;
+              margin-right:.5rem;
+            }
+            .result-final{
+              width:fit-content;
+              box-sizing: border-box;
+              padding:.4rem .55rem;
+              background: rgba(254, 74, 85,0.3);
+              border:1px solid #FE4A55;
+              color:#FE4A55;
+              border-radius: 15px;
+              font-size:0.6rem;
+            }
+          }
+        }
+      }
+    }
+    .noDraw{
+      padding:2rem 0rem;
+      color:#999;
+      line-height: 150%;
+    }
+  }
+
+  &-other{
+    width:100%;
+    .other-title{
+      padding:2rem 0rem;
+      font-weight: 550;
+    }
+  }
+
+
 }
