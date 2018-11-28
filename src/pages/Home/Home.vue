@@ -1,5 +1,7 @@
 <style lang="less" scoped>
+@import '../../assets/css/common.less';
 @import './Home.less';
+@import '../../assets/css/media.css';
 </style>
 <template>
   <div id="home">
